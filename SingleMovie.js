@@ -1,20 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import '../Movie/Movie.scss';
 import ShowMovieCard from '../ShowMovieCard/ShowMovieCard';
 
 const SingleMovie = (item) => {
+    console.log("singlemovie",item)
     return (
-        <NavLink to ={`/singlemovie/${item.Title}` }>
-        <div className='moviebox'>
-        <div className='image'>
-        <img src={item.Poster} className ='img'/>
-        </div>
-        <div className='text-title'>{item.Title}</div>
-        <div className='text-subtitle'>{item.Year}</div>
-       </div>
-       </NavLink>
-   )
-}
+        <NavLink to ={`/Movie:${item.Title}`}>                                                                                                         
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+        </NavLink>
+   )             
+}                                              
 
 export default SingleMovie;

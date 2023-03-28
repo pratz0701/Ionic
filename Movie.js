@@ -1,11 +1,13 @@
 import React from 'react';
-import {UseMovieData} from '../Data/data';
+import {UseMovieData} from '../Data/Data';
 import SingleMovie from '../SingleMovie/SingleMovie';
+import '../Movie/Movie.css'
 
 const Movie = () => {
   const {movies,isLoading} = UseMovieData();
-
+console.log("hey",movies)
   return (
+
     <>
       <div className='container'>
        {
@@ -17,7 +19,7 @@ const Movie = () => {
     </>
   )
 }
-
+                                                                                                                                                                                                                    
 export default Movie;
 
 
@@ -43,7 +45,7 @@ export default Movie;
 //       }
 //     };
   
-//     useEffect(() => {
+//     useEffect(() => {                                                                                                                                                                              
 //       // getmovie();
 //     },[]);
   
@@ -53,4 +55,4 @@ export default Movie;
 //     </>
 //   );
 // }
-// export default Movie;
+// export default Movie;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
